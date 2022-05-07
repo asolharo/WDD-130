@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-  <meta charset="utf-8" />
+<!-- saved from url=(0048)http://127.0.0.1:5500/wwr/site-plan-rafting.html -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
   <title>Site Plan</title>
-  <link type="text/css" rel="stylesheet" href="styles/site-plan-rafting.css" />
+  <link type="text/css" rel="stylesheet" href="./Site Plan_files/site-plan-rafting.css">
 </head>
 
 <body>
@@ -17,7 +15,7 @@
   </header>
   <main>
     <!-- -------------------------Steps 2-5------------------------------ -->
-    <hr />
+    <hr>
     <h2>Overview</h2>
     <h3>Purpose</h3>
     <p>To show the opportunities and experiences that the audience can live in the Grijalva River, <br>located in Chiapa de Corzo, Mexico.
@@ -35,12 +33,12 @@
       This informative site can be accessed from a laptop, landline computer or mobile devices such as cell phones and tablets. Access is free of charge for the user.
       Crossing the Grijalba River and enjoying the landscape of the Sump Canyon is something that lovers of rapids cannot miss.</p>
 
-    <hr />
+    <hr>
     <h2>Branding</h2>
     <h3>Website Logo</h3>
     <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
-    <img src="images/logo.png" alt="Logo image" />
-    <hr />
+    <img src="./Site Plan_files/logo.png" alt="Logo image">
+    <hr>
     <h2>Style Guide</h2>
 
     <!-- -------------------------Steps 6-9------------------------------ -->
@@ -50,11 +48,10 @@
 
     <!-- Copy and paste the URL to your finished palette below. Replace the href value that is there with yours. Make sure to paste it into both the href value and the content text of the <a> tag -->
     <p>Palette URL:</p>
-    <a href="https://coolors.co/0841ac-2e46ff-132ceb-9e7a00-ebba13"
-      target="_blank">https://coolors.co/0841ac-2e46ff-132ceb-9e7a00-ebba13</a>
+    <a href="https://coolors.co/0841ac-2e46ff-132ceb-9e7a00-ebba13" target="_blank">https://coolors.co/0841ac-2e46ff-132ceb-9e7a00-ebba13</a>
 
     <table class="colors">
-      <tr>
+      <tbody><tr>
         <th>Primary</th>
         <th>Secondary</th>
         <th>Accent 1</th>
@@ -67,7 +64,7 @@
         <td class="accent1">[#ebba13]</td>
         <td class="accent2">[#fefefe]</td>
       </tr>
-    </table>
+    </tbody></table>
 
     <!-- -------------------------Steps 10-12------------------------------ -->
 
@@ -102,11 +99,11 @@
     <h3>Navigation</h3>
     <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
     <nav>
-      <a href="index.html">Home</a>
-      <a href="aboutriver.html">About Rio Grijalva</a>
-      <a href="contactus.html">Contact Us</a>
+      <a href="http://127.0.0.1:5500/wwr/index.html">Home</a>
+      <a href="http://127.0.0.1:5500/wwr/site-plan-rafting.html#">About Rio Grijalva</a>
+      <a href="http://127.0.0.1:5500/wwr/contactus.html">Contact Us</a>
     </nav>
-    <hr />
+    <hr>
     <h2>Site Map</h2>
     <div class="sitemap">
       <div class="sm-home">Home</div>
@@ -120,18 +117,55 @@
       <div class="left">&nbsp;</div>
       <div class="right">&nbsp;</div>
     </div>
-    <hr />
+    <hr>
     <h2>Wireframes</h2>
     <!-- Create an additional wireframe for your site. List it here below the Home page wireframe. -->
 
     <h3>Home</h3>
 
-    <img src="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" alt="home page wireframe" />
+    <img src="./Site Plan_files/wireframe_home.png" alt="home page wireframe">
 
     <h3>[Page 2]</h3>
 
     <!-- <img src="#" alt="page 2 wireframe"> -->
   </main>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
-</html>
+</body></html>
