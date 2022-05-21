@@ -67,11 +67,13 @@ nav a:hover{
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .book:hover, .join:hover{
     background-color: #2e46ff;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .msg{
