@@ -154,3 +154,8 @@ footer .social img {
 .card-img {
     border: 10px solid #1c499f;
 }
+
+
+#watermark {
+    font-size: 10pt;
+}
