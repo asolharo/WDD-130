@@ -1,16 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans&family=Titillium+Web&display=swap');
 
+body{
+    background-color: #CBD6EA;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
 
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 1.75em;
+    line-height: 1.1em;
+    padding: 10px;
+    color: #1c499f;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    padding: 10px;
+    color: #1c499f;
+}
+
 nav a{
     text-align: center;
     color: White;
     text-decoration:none;
-    padding: 10px;
+    padding: .75em 1em;
+}
+
+nav a:hover{
+    background-color: #ebba13;
+    color: #1c499f;
+}
+
+header{
+    background-color:#1c499f;
+    display: grid;
+    grid-template-columns: 250 px auto;
+    align-items: center;
+}
+
+main, section {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.home-title{
+    color: white;
+    font-size: 2.5em;
+    margin: 15px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -25,39 +71,10 @@ nav a{
 #hero-box {
     background-color: white;
     margin: 0 auto;
-    font-family: 'Bubblegum Sans', cursive;
 }
 
 .button-box{
     text-align: center;
-}
-
-main section {
-    text-align: center;
-    box-sizing: border-box;
-}
-
-#background {
-    height: 725px;
-    background-color: #1c499f;
-
-}
-
-body{
-    background-color: #CBD6EA;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2em;
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    background-color:#1c499f;
-}
-
-nav a:hover{
-    background-color: #ebba13;
-    color: #1c499f;
 }
 
 .book, .join{
@@ -67,13 +84,11 @@ nav a:hover{
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .book:hover, .join:hover{
     background-color: #2e46ff;
     color: white;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .msg{
@@ -82,69 +97,22 @@ nav a:hover{
     padding: 35px;
 }
 
-footer{
-    background-color: #1c499f;
-    padding: 25px 50px;
-    margin-top: 200px;
+img{
+    max-width: 100%;
 }
 
-.home-title{
-    color: white;
-    font-family: 'Bubblegum Sans', cursive;
-    font-size: 2em;
-    margin-top: 10px;
-}
-
-h2 {
-    color:#1c499f;
-    font-family: 'Bubblegum Sans', cursive;
-    font-size: 45pt;
-    margin: 0;
-}
-
-h4{
-    color: white;
-}
-
-.msg h2{
-    color: #1c499f;
-}
-
-.msg p{
-    color: #1c499f;
-    font-family: 'Open Sans', sans-serif;
-    font-size: .8em;
-    padding-bottom: 15px;
-}
-
-footer h3{
-    color: white;
-}
-
-footer a{
-    color: white;
-    text-decoration:none;
-}
-
-footer a:hover{
-    color: #ebba13;
-}
-
-.icon, .logo {
-    width: 80px;
-    padding-top: 10px;
-}
-
-footer h3 a:hover {
-    text-decoration: underline;
+.logo{
+    width: 100px;
+    margin: 15px;
 }
 
 #logo_link {
     padding-top: 5px;
 }
 
-footer .social img {
-    padding-top: 15px;
+.icon {
+    width: 80px;
+    padding-top: 10px;
 }
 
 .rivers-card, .camping-card, .rapids-card {
@@ -155,7 +123,71 @@ footer .social img {
     border: 10px solid #1c499f;
 }
 
+h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+#background {
+    height: auto;
+    background-color: #1c499f;
+
+}
+
+.mountains {
+    width: 90%;
+    margin: 25px;
+}
+
+.msg h2, .msg p {
+    color: #1c499f;
+}
+
+#info {
+    color: white;
+    font-size: 1em;
+}
+
+.socialmedia {
+    padding: 10px;
+}
+
+.icons {
+    width: 45px;
+    height: 45px;
+}
+
+footer {
+    background-color: #1c499f;
+    display: grid;
+    grid-template-columns: 1fr max-content repeat(6, max-content);
+    align-items: center;
+    justify-content: center;
+    line-height: 1.75em;
+}
+
+footer h3{
+    font-size: 1em;
+    padding: 75px;
+}
+
+footer a{
+    color: white;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #ebba13;
+}
+
+#attribution {
+    background-color: #1c499f;
+}
 
 #watermark {
-    font-size: 10pt;
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    padding: 2em;
 }
