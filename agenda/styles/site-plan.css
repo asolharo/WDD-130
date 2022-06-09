@@ -130,14 +130,14 @@ nav a:hover {
   justify-content: center;
 
   grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
+  grid-template-rows: 3em 1.5em 1.5em 3em 1.5em 3em;
+  grid-template-areas:
+    ". . home home . ."
     ". . . top . ."
-    ". . . top . ."
-    ". . page2 page2 . ."
-    ". . . middle . ."
-    ". . . middle . ."
-    ". . page3 page3 . .";
+    ". left left right right ."
+    "page2 page2 . . page4 page4"
+    ". bottom . . . ."
+    "page3 page3 . . . .";
 }
 .sitemap > div {
 
@@ -160,12 +160,29 @@ nav a:hover {
   line-height: 3em;
 }
 
+.sm-page4 {
+  grid-area: page4;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
 .top {
   grid-area: top;
   border-left: 1px solid;
 }
 
-.middle {
-  grid-area: middle;
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.bottom {
+  grid-area: top;
   border-left: 1px solid;
 }
