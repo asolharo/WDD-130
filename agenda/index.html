@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+
     <title>Interviews Agenda</title>
 </head>
+
 <body>
-    This will be the homepage
-    <br>
-    <br>
-    <a href="../index.html">Go to main site</a>
+    <header>
+        <a href="index.html" id="logo_link">
+            <img class="logo" src="images/logo.png" alt="Inteviews Agenda logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="scheduler.html">Scheduler</a>
+            <a href="guidelines.html">Guidelines</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="background">
+            <div id="bkg-box">
+                <img id="bkg-img" src="images/bonita_vista.png" alt="Bonita Vista Chapel">
+            </div>
+        </div>
+        <img class="logo" src="images/logoAgenda.png" alt="Inteviews Agenda logo">
+        <section id="title"></section>
+        <button id="button" onclick="window.location.href='login.html'">Add appointment</button>
+        <div id="table"></div>
+    </main>
+
+    <footer>
+        <p id="info">Interviews Agenda &copy; 2022 - Angel Solano</p>
+        <h3><a href="site_plan.html">Site Plan</a></h3>
+    </footer>
+
 </body>
+
 </html>

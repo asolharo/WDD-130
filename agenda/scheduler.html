@@ -4,13 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda | Scheduler</title>
+
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+
+    <title>Scheduler</title>
 </head>
+
 <body>
-    This will be where the interviews will be scheduled
-    <br>
-    <br>
-    <a href="site_plan.html">Go to Site Plan</a>
+    <header>
+        <a href="index.html" id="logo_link">
+            <img class="logo" src="images/logo.png" alt="Inteviews Agenda logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="scheduler.html">Scheduler</a>
+            <a href="guidelines.html">Guidelines</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="background">
+            <div id="bkg-box">
+                <img id="bkg-img" src="images/bonita_vista.png" alt="Bonita Vista Chapel">
+            </div>
+        </div>
+        <img class="logo" src="images/logoAgenda.png" alt="Inteviews Agenda logo">
+        <section id="title">
+            <h1>Register appointment</h1>
+        </section>
+
+        <form action="scheduler.html" method="post">
+            <ul>
+                <li>
+                    <label for="interviewer">Interviewer</label>
+                    <input type="text" id="name" name="interviewer" />
+                </li>
+                <li>
+                    <label for="date">Date:</label>
+                    <input type="email" id="date" name="date" />
+                </li>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="email" id="name" name="name" />
+                </li>
+                <li>
+                    <label for="reason">Reason:</label>
+                    <input type="email" id="reason" name="reason" />
+                </li>
+
+                <li class="button-box">
+                </li>
+            </ul>
+        </form>
+        <button id="button" onclick="window.location.href='scheduler.html'">Save</button>
+        <button id="button" onclick="window.location.href='index.html'">Done</button>
+    </main>
+
+    <footer>
+        <p id="info">Interviews Agenda &copy; 2022 - Angel Solano</p>
+        <h3><a href="site_plan.html">Site Plan</a></h3>
+    </footer>
 
 </body>
+
 </html>
