@@ -23,15 +23,71 @@
     </header>
 
     <main>
-        <div id="background">
-            <div id="bkg-box">
-                <img id="bkg-img" src="images/bonita_vista.png" alt="Bonita Vista Chapel">
-            </div>
+        <div id="bkg-box">
         </div>
-        <img class="logo" src="images/logoAgenda.png" alt="Inteviews Agenda logo">
-        <section id="title"></section>
-        <button id="button" onclick="window.location.href='login.html'">Add appointment</button>
-        <div id="table"></div>
+
+        <div class="logotype">
+            <img class="logotype" src="images/logoAgenda.png" alt="Inteviews Agenda logo">
+        </div>
+
+        <div class="intro">
+            <p>See the table below to know the next interviews and what member of the bishopric will be the interviewer.</p>
+            <p>If you are an executive secretary. and want to add a new appointment, click on the "Add Appointment" button. </p>
+        </div>
+
+        <section id="title">
+            <h1>Next Appointments</h1>
+        </section>
+
+        <div id="button"><button class="button" onclick="window.location.href='login.html'">Add appointment</button></div>
+        <div id="table">
+            <table class="tg" style="table-layout: fixed; width: 714px">
+                <colgroup>
+                <col style="width: 131px">
+                <col style="width: 201px">
+                <col style="width: 178px">
+                <col style="width: 122px">
+                <col style="width: 41px">
+                <col style="width: 41px">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="tg-wl7y">INTERVIEWER</th>
+                    <th class="tg-wl7y">DATE</th>
+                    <th class="tg-wl7y">NAME</th>
+                    <th class="tg-wl7y">REASON</th>
+                    <th class="tg-wl7y"></th>
+                    <th class="tg-wl7y"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-baqh">Bishop</td>
+                    <td class="tg-baqh">Thu, Jun 30, 2022 7:30 PM</td>
+                    <td class="tg-baqh">Angel Solano</td>
+                    <td class="tg-baqh">Renewal</td>
+                    <td class="tg-nrw1"><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='%23000000' d='M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z'/%3e%3c/svg%3e" alt="Image" width="25" height="25"></td>
+                    <td class="tg-baqh"><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 352 512'%3e%3cpath fill='%23000000' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z'/%3e%3c/svg%3e" alt="Image" width="25" height="25"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-baqh">First Councelor</td>
+                    <td class="tg-baqh"><span style="font-weight:400;font-style:normal">Thu, Jun 30, 2022 7:30 PM</span></td>
+                    <td class="tg-baqh">Yuma Gomez</td>
+                    <td class="tg-baqh">Semiannual</td>
+                    <td class="tg-baqh"><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='%23000000' d='M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z'/%3e%3c/svg%3e" alt="Image" width="25" height="25"></td>
+                    <td class="tg-baqh"><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 352 512'%3e%3cpath fill='%23000000' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z'/%3e%3c/svg%3e" alt="Image" width="25" height="25"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-baqh">Bishop</td>
+                    <td class="tg-baqh"><span style="font-weight:400;font-style:normal">Thu, Jun 30, 2022 8:00 PM</span></td>
+                    <td class="tg-baqh">Jorge Corona</td>
+                    <td class="tg-baqh"><span style="font-weight:400;font-style:normal">Renewal</span></td>
+                    <td class="tg-baqh"><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='%23000000' d='M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z'/%3e%3c/svg%3e" alt="Image" width="25" height="25"></td>
+                    <td class="tg-baqh"><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 352 512'%3e%3cpath fill='%23000000' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z'/%3e%3c/svg%3e" alt="Image" width="25" height="25"></td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <footer>
