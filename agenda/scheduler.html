@@ -23,41 +23,36 @@
     </header>
 
     <main>
-        <div id="background">
-            <div id="bkg-box">
-                <img id="bkg-img" src="images/bonita_vista.png" alt="Bonita Vista Chapel">
-            </div>
+        <div id="bkg-box">
         </div>
-        <img class="logo" src="images/logoAgenda.png" alt="Inteviews Agenda logo">
+
+        <div class="logotype">
+            <img class="logotype" src="images/logoAgenda.png" alt="Inteviews Agenda logo">
+        </div>
+
+        <div class="intro">
+            <p>Enter the information requested below to schedule an appointment.</p>
+        </div>
+
         <section id="title">
             <h1>Register appointment</h1>
         </section>
+        <button id="button" class="button" onclick="window.location.href='index.html'">Done</button>
+        <form action="scheduler.html" method="post" class="scheduler" style="table-layout: fixed; width: 714px">
+                <label for="interviewer">Interviewer</label>
+                <input type="text" id="name" name="interviewer" placeholder="Who's doing the interview?"/>
 
-        <form action="scheduler.html" method="post">
-            <ul>
-                <li>
-                    <label for="interviewer">Interviewer</label>
-                    <input type="text" id="name" name="interviewer" />
-                </li>
-                <li>
-                    <label for="date">Date:</label>
-                    <input type="email" id="date" name="date" />
-                </li>
-                <li>
-                    <label for="name">Name:</label>
-                    <input type="email" id="name" name="name" />
-                </li>
-                <li>
-                    <label for="reason">Reason:</label>
-                    <input type="email" id="reason" name="reason" />
-                </li>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" placeholder="MM/DD/YYYY"/>
 
-                <li class="button-box">
-                </li>
-            </ul>
+                <label for="name">Name:</label>
+                <input type="email" id="name" name="name" placeholder="Name"/>
+
+                <label for="reason">Reason:</label>
+                <input type="email" id="reason" name="reason" placeholder="Reason for interview"/>
+
+                <button id="button" onclick="window.location.href='scheduler.html'">Save</button>
         </form>
-        <button id="button" onclick="window.location.href='scheduler.html'">Save</button>
-        <button id="button" onclick="window.location.href='index.html'">Done</button>
     </main>
 
     <footer>

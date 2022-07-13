@@ -39,7 +39,7 @@
             <h1>Next Appointments</h1>
         </section>
 
-        <div id="button"><button class="button" onclick="window.location.href='login.html'">Add appointment</button></div>
+        <div id="button"><button class="button" onclick="login()">Add appointment</button></div>
         <div id="table">
             <table class="tg" style="table-layout: fixed; width: 714px">
                 <colgroup>
@@ -100,13 +100,43 @@
                 </tbody>
             </table>
         </div>
+
     </main>
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <div>Please login to enter the scheduler</div>
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" id="name" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" onclick="goToScheduler()" id="btnLogin">Login</button>
+        </div>
+      </form>
+    </div>
 
     <footer>
         <p id="info">Interviews Agenda &copy; 2022 - Angel Solano</p>
         <h3><a href="site_plan.html">Site Plan</a></h3>
     </footer>
+    <!-- <div id="welcomeDiv" > WELCOME</div> -->
 
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
