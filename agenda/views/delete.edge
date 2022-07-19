@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+
+    <title>Scheduler</title>
+</head>
+
+<body>
+    <header>
+        <a href="/" id="logo_link">
+            <img class="logo" src="images/logo.png" alt="Inteviews Agenda logo">
+        </a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/scheduler">Scheduler</a>
+            <a href="/guidelines">Guidelines</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="bkg-box">
+        </div>
+
+        <div class="logotype">
+            <img class="logotype" src="images/logoAgenda.png" alt="Inteviews Agenda logo">
+        </div>
+
+        <div class="intro">
+            <p>Are you sure you want to delete this appointment?</p>
+        </div>
+
+        <section id="title">
+            <h1>Delete appointment</h1>
+        </section>
+        <form action="/delete_{{appt.id}}" method="POST" class="scheduler" style="table-layout: fixed; width: 714px">
+            <label for="interviewer">Interviewer</label>
+            <input type="text" id="interviewer" name="interviewer" value="{{appt.interviewer}}"/>
+
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date" value="{{appt.date}}"/>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="{{appt.name}}"/>
+
+            <label for="reason">Reason:</label>
+            <input type="text" id="reason" name="reason" value="{{appt.reason}}"/>
+
+            <button id="button" class="button" onclick="window.location.href='/scheduler'">Delete</button>
+        </form>
+    </main>
+
+    <footer>
+        <p id="info">Interviews Agenda &copy; 2022 - Angel Solano</p>
+        <h3><a href="/site_plan">Site Plan</a></h3>
+    </footer>
+
+</body>
+
+</html>

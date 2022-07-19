@@ -26,7 +26,7 @@ function goToScheduler() {
         console.log("It's working")
         //document.getElementById('welcomeDiv').style.display = "block";
         //alert( "username = " + sessionStorage.getItem(uname));
-        window.location.href = './scheduler.html';
+        window.location.href = '/schedule';
         modal.style.display = "none";
     }
 
@@ -39,3 +39,4 @@ function goToScheduler() {
     console.log(pass)
 
 }
+

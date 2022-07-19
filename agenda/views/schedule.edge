@@ -12,13 +12,13 @@
 
 <body>
     <header>
-        <a href="index.html" id="logo_link">
+        <a href="/" id="logo_link">
             <img class="logo" src="images/logo.png" alt="Inteviews Agenda logo">
         </a>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="scheduler.html">Scheduler</a>
-            <a href="guidelines.html">Guidelines</a>
+            <a href="/">Home</a>
+            <a href="/scheduler">Scheduler</a>
+            <a href="/guidelines">Guidelines</a>
         </nav>
     </header>
 
@@ -37,8 +37,8 @@
         <section id="title">
             <h1>Register appointment</h1>
         </section>
-        <button id="button" class="button" onclick="window.location.href='index.html'">Done</button>
-        <form action="scheduler.html" method="post" class="scheduler" style="table-layout: fixed; width: 714px">
+        <button id="button" class="button" onclick="window.location.href='/'">Done</button>
+        <form action="/scheduler" method="post" class="scheduler" style="table-layout: fixed; width: 714px">
             <label for="interviewer">Interviewer</label>
             <input type="text" id="interviewer" name="interviewer" placeholder="Who's doing the interview?"/>
 
@@ -51,13 +51,13 @@
             <label for="reason">Reason:</label>
             <input type="text" id="reason" name="reason" placeholder="Reason for interview"/>
 
-            <button id="save" onclick="window.location.href='scheduler.html'">Save</button>
+            <button id="save" onclick="window.location.href='/scheduler'">Save</button>
         </form>
     </main>
 
     <footer>
         <p id="info">Interviews Agenda &copy; 2022 - Angel Solano</p>
-        <h3><a href="site_plan.html">Site Plan</a></h3>
+        <h3><a href="/site_plan">Site Plan</a></h3>
     </footer>
 
 </body>
