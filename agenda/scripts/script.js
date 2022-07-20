@@ -1,5 +1,6 @@
-// Get the modal
+// Set variables
 var modal = document.getElementById('id01');
+var signOut = document.getElementById('signOut');
 var user = "asolharo"
 var pwd = "testing"
 
@@ -13,7 +14,16 @@ window.onclick = function(event) {
 function login(){
     console.clear();
     //document.getElementById('welcomeDiv').style.display = "none";
-    modal.style.display='block'
+    if (sessionStorage.getItem(user) != pwd) {
+        modal.style.display='block'
+        signOut.style.visibility = 'hidden';
+    }
+    else {
+        window.location.href = './scheduler.html';
+        modal.style.display = "none";
+        signOut.style.visibility = 'visible';
+    }
+    //console.log(sessionStorage.getItem(key))
 }
 
 function goToScheduler() {
@@ -28,6 +38,7 @@ function goToScheduler() {
         //alert( "username = " + sessionStorage.getItem(uname));
         window.location.href = './scheduler.html';
         modal.style.display = "none";
+        signOut.style.visibility = 'visible';
     }
 
     else {
@@ -40,3 +51,27 @@ function goToScheduler() {
 
 }
 
+function exit() {
+    console.clear();
+    if (sessionStorage.getItem(user) == pwd) {
+        console.log('before clearing')
+        console.log(sessionStorage.getItem(user))
+        sessionStorage.clear();
+        console.log('after clearing')
+        console.log(sessionStorage.getItem(user))
+        signOut.style.visibility = 'hidden';
+        window.location.href = './index.html';
+    }
+}
+
+function checkSession(){
+    if (sessionStorage.getItem(user) == pwd) {
+        console.log("It's working")
+        signOut.style.visibility = 'visible';
+    }
+    else {
+        console.log("There's no session")
+        console.log(sessionStorage.getItem(user))
+        signOut.style.visibility = 'hidden';
+    }
+}

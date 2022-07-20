@@ -10,8 +10,8 @@
     <title>Guidelines</title>
 </head>
 
-<body>
-    <header>
+<body onload="checkSession()">
+  <header>
         <a href="index.html" id="logo_link">
             <img class="logo" src="images/logo.png" alt="Inteviews Agenda logo">
         </a>
@@ -19,6 +19,7 @@
             <a href="index.html">Home</a>
             <a href="scheduler.html">Scheduler</a>
             <a href="guidelines.html">Guidelines</a>
+            <a id="signOut" onclick="exit()" >Sign Out</a>
         </nav>
     </header>
 
@@ -152,6 +153,7 @@
         </div>
 
     </footer>
+    <script src="scripts/script.js"></script>
 
 </body>
 
