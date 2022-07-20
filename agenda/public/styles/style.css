@@ -218,7 +218,7 @@ label {
 }
 
 /* Full-width input fields [type=text], input[type=password] */
-input {
+input, #interviewer {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;

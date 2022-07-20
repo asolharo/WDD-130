@@ -38,18 +38,18 @@
             <h1>Register appointment</h1>
         </section>
         <button id="button" class="button" onclick="window.location.href='/'">Done</button>
-        <form action="/scheduler" method="post" class="scheduler" style="table-layout: fixed; width: 714px">
+        <form action="/update_appt/save_{{appt.id}}" method="POST" class="scheduler" style="table-layout: fixed; width: 714px">
             <label for="interviewer">Interviewer</label>
-            <input type="text" id="interviewer" name="interviewer" placeholder="Who's doing the interview?"/>
+            <input type="text" id="interviewer" name="interviewer" value="{{appt.interviewer}}"/>
 
             <label for="date">Date:</label>
-            <input type="date" id="date" name="date"/>
+            <input type="text" id="date" name="date" value="{{appt.date}}"/>
 
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name"/>
+            <input type="text" id="name" name="name" value="{{appt.name}}"/>
 
             <label for="reason">Reason:</label>
-            <input type="text" id="reason" name="reason" placeholder="Reason for interview"/>
+            <input type="text" id="reason" name="reason" value="{{appt.reason}}"/>
 
             <button id="save" onclick="window.location.href='/scheduler'">Save</button>
         </form>

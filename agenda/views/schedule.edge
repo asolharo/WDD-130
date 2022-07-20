@@ -31,16 +31,20 @@
         </div>
 
         <div class="intro">
-            <p>Enter the information requested below to schedule an appointment.</p>
+            <p>Enter the information requested below to schedule an appointment. Where you're finished click the "Done" button.</p>
         </div>
 
         <section id="title">
             <h1>Register appointment</h1>
         </section>
         <button id="button" class="button" onclick="window.location.href='/'">Done</button>
-        <form action="/scheduler" method="post" class="scheduler" style="table-layout: fixed; width: 714px">
+        <form action="/schedule" method="post" class="scheduler" style="table-layout: fixed; width: 714px">
             <label for="interviewer">Interviewer</label>
-            <input type="text" id="interviewer" name="interviewer" placeholder="Who's doing the interview?"/>
+            <select type="text" id="interviewer" name="interviewer" placeholder="Who's doing the interview?">
+                <option value="Bishop">Bishop</option>
+                <option value="First Councelor">First Councelor</option>
+                <option value="Second Councelor">Second Councelor</option>
+            </select>
 
             <label for="date">Date:</label>
             <input type="date" id="date" name="date"/>

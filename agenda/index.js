@@ -47,6 +47,7 @@ app.get('/schedule', (req,res) => {
 app.post('/schedule', (req, res) => {
     Appt.create(req.body, (err, appointment) => {
         res.redirect('/schedule')
+        alert("Appointment registered");
         console.log('Appointment registered successfully')
     })
 })
