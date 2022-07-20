@@ -436,3 +436,9 @@ a:hover {
     grid-row: 4/5;
     padding-left: 30px;
 }
+
+.icons {
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
